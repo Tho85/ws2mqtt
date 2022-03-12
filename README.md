@@ -1,8 +1,8 @@
 # ws2mqtt - WiSafe2 to MQTT gateway
 
-ws2mqtt is an inofficial gateway to connect WiSafe2 devices to your smart home.
+ws2mqtt is an inofficial gateway to connect WiSafe2 smoke, heat and CO detectors to your smart home.
 
-It connects to your existing detector network through a WiSafe2 module. An ESP32 chip communicates with the module through an Arduino SPI/UART converter. The ESP software publishes device states via MQTT and integrates with Home Assistant through MQTT autodiscovery.
+The gateway consists of an ESP32 module that handles Wifi and MQTT communication and integrates with Home Assistant through MQTT auto discovery. It is connected to an Arduino that acts as an SPI/UART converter. The Arduino talks to an official WiSafe2 module that is connected to your smoke detector network.
 
 ## Disclaimer
 
@@ -79,8 +79,9 @@ TODO:
     - Within 5 seconds, push test button on a different detector
     - Module LED should blink multiple times as a confirmation
 - Mount ESP32, Arduino and WiSafe2 module on PCB
-  - Open Home Assistant
+- Configure Home Assistant
   - The gateway and all detectors should be visible in the "Devices" tab
+  - Create an automation that listens for the `alarm` event emitted by the gateway, see below
 
 ## Tips & troubleshooting
 
