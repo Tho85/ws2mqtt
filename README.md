@@ -58,7 +58,7 @@ TODO:
 - [ESP32-DevKitC V4](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
 - [Arduino Pro Mini](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardProMini), or chinese clone
 - [WiSafe2 module](https://www.directtradesupplies.co.uk/product.php/199997/fireangel-wisafe2-module--wireless-alarm-pairing--all-wisafe2--mains---battery-only--alarms-can-be-paired---white-)
-- Custom PCB (see `PCB` folder), or alternatively, lots of wires
+- Custom PCB (see `PCB` folder), or alternatively, lots of wires (see [schematic](PCB/schematic.pdf))
 
 ## Setup
 
