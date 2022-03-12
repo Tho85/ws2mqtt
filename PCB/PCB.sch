@@ -1,0 +1,450 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Tho85:W2-MM J3
+U 1 1 621425D0
+P 9300 2450
+F 0 "J3" H 9125 2875 50  0000 C CNN
+F 1 "W2-Module" H 9125 2784 50  0000 C CNN
+F 2 "Tho85:W2-MM" H 8950 2450 50  0001 C CNN
+F 3 "~" H 8950 2450 50  0001 C CNN
+	1    9300 2450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9600 2350
+NoConn ~ 9600 2450
+Wire Wire Line
+	9600 2650 10250 2650
+Text Label 10250 2650 2    50   ~ 0
+W2_MISO
+Wire Wire Line
+	8650 2650 8550 2650
+Wire Wire Line
+	8550 2650 8550 2750
+$Comp
+L power:GND #PWR0101
+U 1 1 62148FE7
+P 8550 2750
+F 0 "#PWR0101" H 8550 2500 50  0001 C CNN
+F 1 "GND" H 8555 2577 50  0000 C CNN
+F 2 "" H 8550 2750 50  0001 C CNN
+F 3 "" H 8550 2750 50  0001 C CNN
+	1    8550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2550 8100 2550
+Text Label 8100 2550 0    50   ~ 0
+W2_SCK
+Wire Wire Line
+	8650 2450 8100 2450
+Text Label 8100 2450 0    50   ~ 0
+W2_MOSI
+Wire Wire Line
+	8100 2350 8650 2350
+Text Label 8100 2350 0    50   ~ 0
+W2_HANDSHAKE
+Wire Wire Line
+	8650 2250 8100 2250
+Text Label 8100 2250 0    50   ~ 0
+W2_CS
+NoConn ~ 9600 2850
+Wire Wire Line
+	5300 3050 5950 3050
+Text Label 5300 3050 0    50   ~ 0
+W2_HANDSHAKE
+Wire Wire Line
+	7150 3050 7700 3050
+Text Label 7700 3050 2    50   ~ 0
+W2_CS
+Wire Wire Line
+	7150 2950 7700 2950
+Text Label 7700 2950 2    50   ~ 0
+W2_MOSI
+Wire Wire Line
+	7150 2850 7700 2850
+Text Label 7700 2850 2    50   ~ 0
+W2_MISO
+Wire Wire Line
+	7150 2750 7700 2750
+Text Label 7700 2750 2    50   ~ 0
+W2_SCK
+$Comp
+L power:GND #PWR0102
+U 1 1 6214D1B7
+P 5800 2350
+F 0 "#PWR0102" H 5800 2100 50  0001 C CNN
+F 1 "GND" H 5805 2177 50  0000 C CNN
+F 2 "" H 5800 2350 50  0001 C CNN
+F 3 "" H 5800 2350 50  0001 C CNN
+	1    5800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L espressif:ESP32-DevKitC U1
+U 1 1 62153396
+P 2750 2600
+F 0 "U1" H 2825 3765 50  0000 C CNN
+F 1 "ESP32-DevKitC" H 2825 3674 50  0000 C CNN
+F 2 "Espressif:ESP32-DevKitC" H 2750 1350 50  0001 C CNN
+F 3 "https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/hw-reference/esp32/get-started-devkitc.html" H 2900 1350 50  0001 C CNN
+	1    2750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino:Arduino_Pro_Mini U2
+U 1 1 62159CE8
+P 6550 2550
+F 0 "U2" H 6550 3439 60  0000 C CNN
+F 1 "Arduino Pro Mini" H 6550 3333 60  0000 C CNN
+F 2 "Arduino:Arduino_Pro_Mini" H 7350 1800 60  0001 C CNN
+F 3 "https://www.sparkfun.com/products/11113" H 6750 1350 60  0001 C CNN
+	1    6550 2550
+	1    0    0    -1  
+$EndComp
+Text Label 5300 1950 0    50   ~ 0
+ARDUINO_TX
+Text Label 5300 2050 0    50   ~ 0
+ARDUINO_RX
+NoConn ~ 5950 2350
+NoConn ~ 5950 2450
+NoConn ~ 5950 2550
+NoConn ~ 5950 2650
+NoConn ~ 5950 2750
+NoConn ~ 5950 2850
+NoConn ~ 7150 1950
+NoConn ~ 7150 2350
+NoConn ~ 7150 2450
+NoConn ~ 7150 2550
+NoConn ~ 7150 2650
+NoConn ~ 6450 3450
+NoConn ~ 6550 3450
+NoConn ~ 6650 3450
+NoConn ~ 6750 3450
+$Comp
+L Connector:AVR-ISP-6 J1
+U 1 1 6216149C
+P 2250 4650
+F 0 "J1" H 1921 4746 50  0000 R CNN
+F 1 "ICSP" H 1921 4655 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" V 2000 4700 50  0001 C CNN
+F 3 " ~" H 975 4100 50  0001 C CNN
+	1    2250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4450 3200 4450
+Wire Wire Line
+	2650 4550 3200 4550
+Wire Wire Line
+	3200 4650 2650 4650
+$Comp
+L power:GND #PWR0103
+U 1 1 62164402
+P 2150 5150
+F 0 "#PWR0103" H 2150 4900 50  0001 C CNN
+F 1 "GND" H 2155 4977 50  0000 C CNN
+F 2 "" H 2150 5150 50  0001 C CNN
+F 3 "" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5150 2150 5050
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 62164F84
+P 2150 4050
+F 0 "#PWR0104" H 2150 3900 50  0001 C CNN
+F 1 "+3.3V" H 2165 4223 50  0000 C CNN
+F 2 "" H 2150 4050 50  0001 C CNN
+F 3 "" H 2150 4050 50  0001 C CNN
+	1    2150 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4050 2150 4150
+Text Label 3200 4450 2    50   ~ 0
+W2_MISO
+Text Label 3200 4550 2    50   ~ 0
+W2_MOSI
+Text Label 3200 4650 2    50   ~ 0
+W2_SCK
+Text Label 3200 4750 2    50   ~ 0
+ARDUINO_RST
+Wire Wire Line
+	2650 4750 3200 4750
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 6216B402
+P 9800 2150
+F 0 "#PWR0107" H 9800 2000 50  0001 C CNN
+F 1 "+3.3V" H 9815 2323 50  0000 C CNN
+F 2 "" H 9800 2150 50  0001 C CNN
+F 3 "" H 9800 2150 50  0001 C CNN
+	1    9800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2150 9800 2250
+Wire Wire Line
+	9600 2550 9800 2550
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 6216D6DD
+P 1350 1650
+F 0 "#PWR0108" H 1350 1500 50  0001 C CNN
+F 1 "+3.3V" H 1365 1823 50  0000 C CNN
+F 2 "" H 1350 1650 50  0001 C CNN
+F 3 "" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1650 1350 1750
+Wire Wire Line
+	1350 1750 1450 1750
+NoConn ~ 1450 1850
+NoConn ~ 1450 1950
+NoConn ~ 1450 2050
+NoConn ~ 1450 2150
+NoConn ~ 1450 2250
+NoConn ~ 1450 2350
+NoConn ~ 1450 2450
+NoConn ~ 1450 2550
+NoConn ~ 1450 2650
+NoConn ~ 1450 2750
+NoConn ~ 1450 2850
+NoConn ~ 1450 2950
+Wire Wire Line
+	1450 3050 1350 3050
+Wire Wire Line
+	1350 3050 1350 3150
+$Comp
+L power:GND #PWR0109
+U 1 1 62174FF8
+P 1350 3150
+F 0 "#PWR0109" H 1350 2900 50  0001 C CNN
+F 1 "GND" H 1355 2977 50  0000 C CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 3150
+NoConn ~ 1450 3250
+NoConn ~ 1450 3350
+NoConn ~ 1450 3450
+NoConn ~ 1450 3550
+Wire Wire Line
+	4200 1750 4300 1750
+Wire Wire Line
+	4300 1750 4300 1850
+$Comp
+L power:GND #PWR0110
+U 1 1 621784F0
+P 4300 1850
+F 0 "#PWR0110" H 4300 1600 50  0001 C CNN
+F 1 "GND" H 4305 1677 50  0000 C CNN
+F 2 "" H 4300 1850 50  0001 C CNN
+F 3 "" H 4300 1850 50  0001 C CNN
+	1    4300 1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4200 1850
+NoConn ~ 4200 1950
+NoConn ~ 4200 2050
+NoConn ~ 4200 2650
+NoConn ~ 4200 2550
+NoConn ~ 4200 2450
+NoConn ~ 4200 2250
+NoConn ~ 4200 2150
+NoConn ~ 4200 2950
+NoConn ~ 4200 3050
+NoConn ~ 4200 3150
+NoConn ~ 4200 3250
+NoConn ~ 4200 3350
+NoConn ~ 4200 3450
+NoConn ~ 4200 3550
+Wire Wire Line
+	4200 2350 4300 2350
+Wire Wire Line
+	4300 2350 4300 2450
+$Comp
+L power:GND #PWR0111
+U 1 1 62182685
+P 4300 2450
+F 0 "#PWR0111" H 4300 2200 50  0001 C CNN
+F 1 "GND" H 4305 2277 50  0000 C CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2050 5950 2050
+Wire Wire Line
+	4700 1950 5950 1950
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 6218D2D7
+P 7000 4550
+F 0 "J2" H 7050 4967 50  0000 C CNN
+F 1 "Logic analyzer" H 7050 4876 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 7000 4550 50  0001 C CNN
+F 3 "~" H 7000 4550 50  0001 C CNN
+	1    7000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4350 6150 4350
+Text Label 6150 4350 0    50   ~ 0
+W2_SCK
+Wire Wire Line
+	6800 4450 6150 4450
+Text Label 6150 4450 0    50   ~ 0
+W2_MOSI
+Wire Wire Line
+	7300 4350 7950 4350
+Text Label 7950 4350 2    50   ~ 0
+W2_MISO
+Wire Wire Line
+	7300 4450 7950 4450
+Text Label 7950 4450 2    50   ~ 0
+W2_CS
+Wire Wire Line
+	6800 4550 6150 4550
+Text Label 6150 4550 0    50   ~ 0
+W2_HANDSHAKE
+Wire Wire Line
+	7300 4550 7950 4550
+Wire Wire Line
+	9600 2250 9800 2250
+NoConn ~ 5950 2950
+Text Label 7950 4550 2    50   ~ 0
+ARDUINO_RX
+Wire Wire Line
+	6800 4650 6150 4650
+Text Label 6150 4650 0    50   ~ 0
+ARDUINO_TX
+NoConn ~ 6800 4750
+Wire Wire Line
+	7300 4750 7400 4750
+Wire Wire Line
+	7400 4750 7400 4850
+$Comp
+L power:GND #PWR0112
+U 1 1 621A0A19
+P 7400 4850
+F 0 "#PWR0112" H 7400 4600 50  0001 C CNN
+F 1 "GND" H 7405 4677 50  0000 C CNN
+F 2 "" H 7400 4850 50  0001 C CNN
+F 3 "" H 7400 4850 50  0001 C CNN
+	1    7400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 621A1729
+P 9800 2400
+F 0 "JP1" V 9754 2448 50  0000 L CNN
+F 1 "Module power" V 9845 2448 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9800 2400 50  0001 C CNN
+F 3 "~" H 9800 2400 50  0001 C CNN
+	1    9800 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 2300 9800 2250
+Connection ~ 9800 2250
+Wire Wire Line
+	9800 2500 9800 2550
+Wire Wire Line
+	9600 2950 10650 2950
+Wire Wire Line
+	10650 2950 10650 2250
+$Comp
+L Device:Antenna AE1
+U 1 1 621A614A
+P 10650 2050
+F 0 "AE1" H 10730 2039 50  0000 L CNN
+F 1 "Antenna" H 10730 1948 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10650 2050 50  0001 C CNN
+F 3 "~" H 10650 2050 50  0001 C CNN
+	1    10650 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7300 4650
+Wire Wire Line
+	4700 2850 4200 2850
+Wire Wire Line
+	4700 1950 4700 2850
+Wire Wire Line
+	4200 2750 4800 2750
+Wire Wire Line
+	4800 2750 4800 2050
+Wire Wire Line
+	5950 2150 5300 2150
+Text Label 5300 2150 0    50   ~ 0
+ARDUINO_RST
+Wire Wire Line
+	7150 2150 7700 2150
+Text Label 7700 2150 2    50   ~ 0
+ARDUINO_RST
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 621D1533
+P 8000 1950
+F 0 "#PWR0106" H 8000 1800 50  0001 C CNN
+F 1 "+3.3V" H 8015 2123 50  0000 C CNN
+F 2 "" H 8000 1950 50  0001 C CNN
+F 3 "" H 8000 1950 50  0001 C CNN
+	1    8000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1950 8000 2250
+Wire Wire Line
+	7150 2250 8000 2250
+Wire Wire Line
+	7150 2050 7850 2050
+$Comp
+L power:GND #PWR0105
+U 1 1 6214CB8B
+P 7850 2050
+F 0 "#PWR0105" H 7850 1800 50  0001 C CNN
+F 1 "GND" H 7850 1900 50  0000 C CNN
+F 2 "" H 7850 2050 50  0001 C CNN
+F 3 "" H 7850 2050 50  0001 C CNN
+	1    7850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5800 2250
+Wire Wire Line
+	5800 2250 5950 2250
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 621E63AA
+P 5850 6850
+F 0 "LOGO1" H 5850 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5850 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 5850 6850 50  0001 C CNN
+F 3 "~" H 5850 6850 50  0001 C CNN
+	1    5850 6850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
