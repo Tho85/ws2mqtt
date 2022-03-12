@@ -10,7 +10,7 @@ This project is not related to or endorsed by the manufacturer of WiSafe2 device
 
 :warning: **DO NOT USE THIS PROJECT FOR SAFETY-CRITICAL PURPOSES!** :warning:
 
-This is a hobby project after all, so do not rely on it for your personal safety or the saftey of others. Always assume that it will not work in a case of emergency, and plan your emergency procedures accordingly. As the [license](LICENSE) states in more detail, I won't be liable for any damages incurred by this project.
+This is a hobby project after all, so do not rely on it for your personal safety or the saftey of others. Always assume that it will not work in a case of emergency, and plan your emergency procedures accordingly. As the [license](LICENSE.md) states in more detail, I won't be liable for any damages incurred by this project.
 
 ## Pictures
 
@@ -99,4 +99,4 @@ TODO:
 
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](LICENSE.md).
