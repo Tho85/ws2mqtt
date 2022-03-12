@@ -102,3 +102,7 @@ TODO:
 ## License
 
 See [LICENSE](LICENSE.md).
+
+## Final notes
+
+Shout out to **C19HOP** and his [WiSafe2-to-HomeAssistant-Bridge](https://github.com/C19HOP/WiSafe2-to-HomeAssistant-Bridge), for helping in reversing the protocol, and for giving me the motivation to finish this project I've been working on for the last months.
