@@ -1,3 +1,6 @@
+# Reason for fork
+After an evening of confusion why Visual Studio Code with PlatformIO was giving me constant errors compiling, as a lost resort I changed the name of the included "wifi.h" and the references to it, as it might in some way be conflichting with the <wifi.h> library. Miraculously it did suddenly compile without a hitch. I'm by no means a developer and this is my first Github fork, but I figured I'd share it if others run into the same problem.
+
 # ws2mqtt - WiSafe2 to MQTT gateway
 
 ws2mqtt is an inofficial gateway to connect WiSafe2 smoke, heat and CO detectors to your smart home.
