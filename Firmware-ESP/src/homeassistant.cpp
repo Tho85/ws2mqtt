@@ -1,6 +1,6 @@
 #include "homeassistant.h"
 #include "config.h"
-#include "wifi.h"
+#include "wifi_inc.h"
 #include "wisafe2_packets.h"
 #include "wisafe2_tx.h"
 
