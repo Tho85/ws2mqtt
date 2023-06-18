@@ -1,7 +1,7 @@
 #include "Arduino.h"
 
 #include "wisafe2_packets.h"
-#include "wifi.h"
+#include "wifi_inc.h"
 #include "spi_uart.h"
 #include "wisafe2_escape.h"
 #include "wisafe2_rx.h"
