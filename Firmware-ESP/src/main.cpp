@@ -3,7 +3,7 @@
 #include "config.h"
 #include "homeassistant.h"
 #include "main.h"
-#include "wifi.h"
+#include "wifi_inc.h"
 #include "spi_uart.h"
 #include "wisafe2_rx.h"
 #include "wisafe2_tx.h"
