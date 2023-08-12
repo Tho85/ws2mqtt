@@ -1,5 +1,5 @@
 #include "config.h"
-#include "wifi.h"
+#include "wifi_inc.h"
 #include "homeassistant.h"
 
 WiFiClient espClient;
